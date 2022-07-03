@@ -6,7 +6,7 @@ const MySelf = ({house, ornament}) => {
         <div>
             <h3>Me</h3>
             <p><small>house: {house}</small></p>
-            <Special ornament={ornament}></Special>
+            <Special></Special>
         </div>
     );
 };

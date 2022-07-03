@@ -4,7 +4,7 @@ import Father from "../Father/Father";
 import Aunty from "../Aunty/Aunty";
 import "./Grandpa.css";
 
-export const RingContext = createContext("diamond");
+export const RingContext = createContext();
 
 const Grandpa = () => {
   const [house, setHouse] = useState(1);
@@ -17,7 +17,7 @@ const Grandpa = () => {
   };
 
   return (
-    <RingContext.Provider value={house}>
+    <RingContext.Provider value={[house, setHouse]}>
       <div className="grandpa">
         <h2 className="text">Grandpa</h2>
         <button onClick={handleBuyAHouse}>Buy a House</button>
